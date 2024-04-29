@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import image1 from "./assets/LendEase_logo_copy.jpg";
-import image2 from "./assets/JobTrackr_logo.jpg";
-import image3 from "./assets/Crate_Joy_logo.jpg";
+import image1 from "../public/LendEase_logo_copy.jpg";
+import image2 from "../public/JobTrackr_logo.jpg";
+import image3 from "../public/Crate_Joy_logo.jpg";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
