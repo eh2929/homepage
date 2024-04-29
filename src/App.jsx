@@ -4,13 +4,11 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import ProjectCarousel from "./Project-Carousel";
 import MortgageApp from "./MortgageApp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./About";
 
 function MainContent() {
   return (
     <div>
-      <div className="flex justify-center items-center">
-        <NavBar />
-      </div>
       <div className="flex justify-center items-center">
         <div className="body-content flex items-center mt-10">
           <img
@@ -20,8 +18,11 @@ function MainContent() {
           />
           <div className="ml-4">
             <div className="text-4xl">Hi, I'm Ethan.</div>
-            <div>I'm a web developer. I love creating apps and websites!</div>
-            {/* Add your body content here */}
+            <div>
+              I'm a web developer. I'm passionate about creating simple apps
+              with powerful functions.
+            </div>
+            Checkout my latest projects below!{/* Add your body content here */}
           </div>
         </div>
       </div>
@@ -36,9 +37,12 @@ function App() {
   return (
     <Router>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <NavBar />{" "}
+        {/* NavBar is now outside of Routes, so it will be visible on all pages */}
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/projects/mortgage-app" element={<MortgageApp />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </ThemeProvider>
     </Router>

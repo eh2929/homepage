@@ -25,28 +25,22 @@ function ProjectCarousel() {
     <Carousel className="w-full max-w-md">
       <CarouselContent>
         {cards.map((card, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-3/5">
+          <CarouselItem key={index} className="">
             <div className="p-1">
-              <Card className="border-2 border-gray-300 dark:border-gray-500 rounded-lg">
-                <CardContent
-                  className="flex aspect-square items-center justify-center p-6"
-                  style={{
-                    backgroundImage: `url(${card.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  {index === 0 ? (
-                    <Link to="/projects/mortgage-app">
-                      <span className="text-4xl font-semibold">
-                        {card.text}
-                      </span>
-                    </Link>
-                  ) : (
+              <Link to="/projects/mortgage-app">
+                <Card className="border-2 border-gray-300 dark:border-gray-500 rounded-lg">
+                  <CardContent
+                    className="flex aspect-square items-center justify-center p-6"
+                    style={{
+                      backgroundImage: `url(${card.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
                     <span className="text-4xl font-semibold">{card.text}</span>
-                  )}
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </Link>
             </div>
           </CarouselItem>
         ))}
