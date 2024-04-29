@@ -5,6 +5,7 @@ import ProjectCarousel from "./Project-Carousel";
 import MortgageApp from "./MortgageApp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
+import Contact from "./Contact";
 
 function MainContent() {
   return (
@@ -38,11 +39,12 @@ function App() {
     <Router>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <NavBar />{" "}
-        {/* NavBar is now outside of Routes, so it will be visible on all pages */}
+        
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/projects/mortgage-app" element={<MortgageApp />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </ThemeProvider>
     </Router>
