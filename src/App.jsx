@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Resume from "./Resume";
+import Blog from "./Blog";
 
 function MainContent() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </ThemeProvider>
     </Router>
