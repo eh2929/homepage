@@ -6,7 +6,7 @@ function About() {
     <div className="flex justify-center items-center h-screen">
       <div className="flex justify-center items-center">
         <img
-          src="public/IMG_3862.jpg"
+          src="/IMG_3862.jpg"
           alt="headshot"
           className="w-80 border-2 border-gray-300 dark:border-gray-500 rounded-lg mr-4"
         />

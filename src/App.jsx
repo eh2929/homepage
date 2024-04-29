@@ -15,7 +15,7 @@ function MainContent() {
       <div className="flex justify-center items-center">
         <div className="body-content flex items-center mt-10">
           <img
-            src="public/IMG_3933.jpg"
+            src="/IMG_3933.jpg"
             alt="headshot"
             className="w-80 border-2 border-gray-300 dark:border-gray-500 rounded-lg"
           />

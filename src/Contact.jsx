@@ -1,17 +1,20 @@
 // Contact.jsx
-import React from "react";
+import React, { useState } from "react";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
 
 init("lkZhs-nSIjHa0VtWJ"); // Replace with your public key
 
 function Contact() {
+  const [emailSent, setEmailSent] = useState(false);
+
   const sendEmail = (event) => {
     event.preventDefault();
 
     emailjs.sendForm("contact_service", "contact_form", event.target).then(
       () => {
         console.log("SUCCESS!");
+        setEmailSent(true);
       },
       (error) => {
         console.log("FAILED...", error);
@@ -58,6 +61,9 @@ function Contact() {
             className="w-full py-2 px-4 bg-blue-500 text-white rounded"
           />
         </form>
+        {emailSent && (
+          <p>Message sent successfully. Thank you for reaching out!</p>
+        )}
       </div>
     </div>
   );
