@@ -6,6 +6,7 @@ import MortgageApp from "./MortgageApp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
+import Resume from "./Resume";
 
 function MainContent() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/projects/mortgage-app" element={<MortgageApp />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </ThemeProvider>
     </Router>
