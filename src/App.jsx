@@ -11,8 +11,8 @@ import Blog from "./Blog";
 
 function MainContent() {
   return (
-    <div className="h-screen">
-      <div className="h-1/2 flex justify-center items-center">
+    <div className="h-screen text-white dark:bg-black">
+      <div className="h-1/2 flex justify-center items-center bg-custom-blue dark:bg-black">
         <div className="body-content flex items-center mt-10">
           <div className="ml-4">
             <div className="text-4xl flex justify-center">Hi, I'm Ethan.</div>
@@ -24,7 +24,7 @@ function MainContent() {
           </div>
         </div>
       </div>
-      <div className="h-1/2 flex justify-center">
+      <div className="h-1/2 flex justify-center bg-slate-600 dark:bg-slate-900">
         <ProjectDisplay />
       </div>
     </div>

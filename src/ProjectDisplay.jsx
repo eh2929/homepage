@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import image1 from "../public/LendEase_logo_copy.jpg";
 import image2 from "../public/JobTrackr_logo.jpg";
 import image3 from "../public/Crate_Joy_logo.jpg";
@@ -38,7 +37,7 @@ function ProjectDisplay() {
       {cards.map((card, index) => (
         <div
           key={index}
-          className="max-w-xs mx-auto bg-white rounded-xl overflow-hidden m-4"
+          className="max-w-xs mx-auto rounded-xl overflow-hidden m-4"
         >
           <Card>
             <CardHeader>
@@ -53,8 +52,9 @@ function ProjectDisplay() {
               />
             </CardContent>
             <CardFooter>
-              <Button>DEMO</Button>
-              <Button>GitHub</Button>
+              <Button className="bg-slate-600 dark:bg-slate-100 px-4 py-2">DEMO</Button>
+              
+              <Button className="bg-slate-600 dark:bg-slate-100 px-4 py-2 ml-2">GitHub</Button>
             </CardFooter>
           </Card>
         </div>

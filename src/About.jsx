@@ -4,7 +4,7 @@ import React from "react";
 function About() {
   return (
     <div className="h-screen">
-      <div className="h-1/2 flex overflow-auto justify-center items-center">
+      <div className="h-1/2 flex justify-center items-center">
         <div className="flex justify-center items-center">
           <img
             src="/IMG_3862.jpg"
