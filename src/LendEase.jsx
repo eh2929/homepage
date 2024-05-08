@@ -1,6 +1,6 @@
 import React from "react";
 
-function MortgageApp() {
+function LendEase() {
   return (
     <div>
       <div
@@ -9,10 +9,10 @@ function MortgageApp() {
       >
         {" "}
         {/* Replace with the path to your banner image */}
-        <h1>Mortgage App</h1>
+        <h1>Lend Ease</h1>
       </div>
       <div className="description">
-        <p>This is a short description of the Mortgage App project.</p>
+        <p>This is a short description of the Lend Ease project.</p>
         <a
           href="https://github.com/eh2929/Mortgage-Client-Communications"
           target="_blank"
@@ -26,4 +26,4 @@ function MortgageApp() {
   );
 }
 
-export default MortgageApp;
+export default LendEase;

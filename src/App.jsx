@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import ProjectDisplay from "./ProjectDisplay";
-import MortgageApp from "./MortgageApp";
+import LendEase from "./LendEase";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
@@ -38,7 +38,7 @@ function App() {
         <NavBar />{" "}
         <Routes>
           <Route path="/" element={<MainContent />} />
-          <Route path="/projects/mortgage-app" element={<MortgageApp />} />
+          <Route path="/lend-ease" element={<LendEase />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
