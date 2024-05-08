@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import ProjectCarousel from "./Project-Carousel";
+import ProjectDisplay from "./ProjectDisplay";
 import MortgageApp from "./MortgageApp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
@@ -11,26 +11,21 @@ import Blog from "./Blog";
 
 function MainContent() {
   return (
-    <div>
-      <div className="flex justify-center items-center">
+    <div className="h-screen">
+      <div className="h-1/2 flex justify-center items-center">
         <div className="body-content flex items-center mt-10">
-          <img
-            src="/IMG_3933.jpg"
-            alt="headshot"
-            className="w-80 border-2 border-gray-300 dark:border-gray-500 rounded-lg"
-          />
           <div className="ml-4">
-            <div className="text-4xl">Hi, I'm Ethan.</div>
-            <div>
+            <div className="text-4xl flex justify-center">Hi, I'm Ethan.</div>
+            <div className="flex justify-center">
               I'm a web developer. I'm passionate about creating simple apps
               with powerful functions.
             </div>
-            Checkout my latest projects below!{/* Add your body content here */}
+            Checkout my latest projects below!
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-20">
-        <ProjectCarousel />
+      <div className="h-1/2 flex justify-center">
+        <ProjectDisplay />
       </div>
     </div>
   );

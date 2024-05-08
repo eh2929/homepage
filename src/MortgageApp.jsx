@@ -1,10 +1,8 @@
 import React from "react";
-import NavBar from "./NavBar";
 
 function MortgageApp() {
   return (
     <div>
-      <NavBar />
       <div
         className="banner"
         style={{ backgroundImage: "url(/path/to/banner.jpg)" }}
