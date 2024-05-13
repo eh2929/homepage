@@ -24,7 +24,7 @@ function MainContent() {
           </div>
         </div>
       </div>
-      <div className="h-1/2 flex justify-center bg-slate-600 dark:bg-slate-900">
+      <div className="bg-slate-600 dark:bg-slate-900">
         <ProjectDisplay />
       </div>
     </div>

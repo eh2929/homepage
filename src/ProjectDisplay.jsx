@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import image1 from "../public/LendEase_logo_copy.jpg";
 import image2 from "../public/JobTrackr_logo.jpg";
 import image3 from "../public/Crate_Joy_logo.jpg";
+import image4 from "../public/myPokeCollector_logo.jpg";
 import {
   Card,
   CardContent,
@@ -33,15 +34,20 @@ function ProjectDisplay() {
       description:
         "An e-commerce marketplace for vendors to sell subscription boxes.",
     },
+    {
+      image: image4,
+      title: "myPoke Collector",
+      "description": "A Pokemon card collection tracker.",
+    },
     // Add more cards as needed
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {cards.map((card, index) => (
         <div
           key={index}
-          className="max-w-xs mx-auto rounded-xl overflow-hidden m-4"
+          className="max-w-xs mx-auto rounded-xl m-4"
         >
           <Card>
             <CardHeader>
