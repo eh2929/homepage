@@ -4,6 +4,7 @@ import image1 from "../public/LendEase_logo_copy.jpg";
 import image2 from "../public/JobTrackr_logo.jpg";
 import image3 from "../public/Crate_Joy_logo.jpg";
 import image4 from "../public/myPokeCollector_logo.jpg";
+import image5 from "../public/CLI_job_tracker.jpg";
 import {
   Card,
   CardContent,
@@ -37,7 +38,13 @@ function ProjectDisplay() {
     {
       image: image4,
       title: "myPoke Collector",
-      "description": "A Pokemon card collection tracker.",
+      description: "A Pokemon card collection tracker.",
+    },
+    {
+      image: image5,
+      title: "CLI Job Tracker",
+      description:
+        "A command line interface to help you track your job search progress.",
     },
     // Add more cards as needed
   ];
@@ -45,10 +52,7 @@ function ProjectDisplay() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {cards.map((card, index) => (
-        <div
-          key={index}
-          className="max-w-xs mx-auto rounded-xl m-4"
-        >
+        <div key={index} className="max-w-xs mx-auto rounded-xl m-4">
           <Card>
             <CardHeader>
               <CardTitle>{card.title}</CardTitle>
