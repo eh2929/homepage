@@ -5,6 +5,7 @@ import image2 from "../public/JobTrackr_logo.jpg";
 import image3 from "../public/Crate_Joy_logo.jpg";
 import image4 from "../public/myPokeCollector_logo.jpg";
 import image5 from "../public/CLI_job_tracker.jpg";
+import image6 from "../public/LFG.jpg";
 import {
   Card,
   CardContent,
@@ -21,7 +22,7 @@ function ProjectDisplay() {
       image: image1,
       title: "Lend Ease",
       description:
-        "Lend Ease is a communications solution for indepdent third party lenders and their clients.",
+        "Lend Ease is a communications solution for indepedent third party lenders and their clients.",
     },
     {
       image: image2,
@@ -45,6 +46,11 @@ function ProjectDisplay() {
       title: "CLI Job Tracker",
       description:
         "A command line interface to help you track your job search progress.",
+    },
+    {
+      image: image6,
+      title: "Let's Find Games",
+      description: "A platform for gamers to find games based on their mood.",
     },
     // Add more cards as needed
   ];
